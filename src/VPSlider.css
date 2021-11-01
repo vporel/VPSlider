@@ -1,0 +1,30 @@
+
+:root{
+	--thumb-size:50px;
+}
+.vpslider-container, .vpslider-elements, 
+	.vpslider-element-container{height:100%;overflow: hidden;}
+.vpslider-container{
+	width:100%;position:relative;
+}
+.vpslider-elements{
+	position:absolute;
+}
+.vpslider-element-container{
+	display:inline-block;overflow:hidden;
+}
+
+.vpslider-element{
+	height:90%!important;width:90%!important;margin:auto;margin-top:5%;overflow:hidden;
+}
+
+.vpslider-control{
+	position:absolute;background:white;z-index:5;top:40%;
+	box-shadow:0 0 3px black;font:bold 25px sans-serif;padding:10px;
+	cursor:pointer;color:gray;
+	transition: all .2s ease;
+}
+.vpslider-control:hover{color:black;}
+
+.vpslider-prev{border-radius:0 5px 5px 0;}
+.vpslider-next{right: 0;border-radius:5px 0 0 5px;}
